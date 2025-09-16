@@ -26,13 +26,13 @@ function ArenaDelas() {
                 <Link to="/" className="text-purple-600 border-b-2 border-purple-600 pb-1">Início</Link>
               </li>
               <li>
-                <Link to="/jogadoras" className="hover:text-purple-600 transition duration-300">Jogadoras</Link>
+                <Link to="/jogadoras" className="hover:text-purple-600 transition duration-300">Cadastro de Jogadoras</Link>
               </li>
               <li>
                 <Link to="/noticias" className="hover:text-purple-600 transition duration-300">Notícias</Link>
               </li>
               <li>
-                <Link to="/clubes" className="hover:text-purple-600 transition duration-300">Clubes</Link>
+                <Link to="/clubes" className="hover:text-purple-600 transition duration-300"> Cadastro de Clubes</Link>
               </li>
               <li>
                 <Link to="/comunidade" className="hover:text-purple-600 transition duration-300">Comunidade</Link>
