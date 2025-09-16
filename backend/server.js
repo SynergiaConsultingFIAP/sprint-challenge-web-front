@@ -66,6 +66,27 @@ app.get('/clubes', (req, res) => {
   res.json(clubes);
 });
 
+let foruns = [
+  { id: 1, titulo: "Debate Tático", descricao: "Análises sobre esquemas, formações e estratégias das equipes.", topicos: 32 },
+  { id: 2, titulo: "Mercado da Bola", descricao: "Rumores, transferências e tudo sobre a movimentação das jogadoras.", topicos: 57 },
+  { id: 3, titulo: "Seleção Brasileira", descricao: "Convocações, amistosos e o caminho para a próxima Copa do Mundo.", topicos: 41 }
+];
+
+app.get('/foruns', (req, res) => res.json(foruns));
+
+let enquete = {
+  pergunta: "Qual foi o gol mais bonito da última rodada do Brasileirão?",
+  opcoes: [
+    "Gol de falta da Ana Silva (São Paulo Fúria FC)",
+    "Voleio da Beatriz Costa (Rio Pássaros Azuis)",
+    "Chute de fora da área da Carla Mendes (Minas Leoas)",
+    "Cabeçada da artilheira (Bahia Tempestade)",
+    "Outro"
+  ]
+};
+
+app.get('/enquete', (req, res) => res.json(enquete));
+
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
-});
+}); 
