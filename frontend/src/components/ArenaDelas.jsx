@@ -16,7 +16,7 @@ function ArenaDelas() {
         <div className="container mx-auto flex items-center justify-between p-4">
           <div className="logo">
             <a href="#">
-              <img src="./src/assets/imgs/logo.png" alt="Logo Arena Delas" className="h-12"/>
+              <img src="src/assets/logoArenaDelas.png" alt="Logo Arena Delas" className="h-12"/>
             </a>
           </div>
           <nav>
@@ -47,19 +47,19 @@ function ArenaDelas() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <div className="bg-gradient-to-b from-pink-400 to-pink-400 text-white rounded-xl p-6 text-center hover:scale-105 transition-transform duration-300">
-              <img src="./src/assets/imgs/icon-player.png" alt="Ícone Jogadora" className="mx-auto mb-4 h-16"/>
+              <img src="src/assets/icon-player.png" alt="Ícone Jogadora" className="mx-auto mb-4 h-16"/>
               <h3 className="text-xl font-semibold mb-2">Perfis de Atletas</h3>
               <p>Jogadoras podem criar perfis detalhados, mostrando suas habilidades, histórico e paixão pelo esporte.</p>
             </div>
 
             <div className="bg-gradient-to-b from-pink-400 to-pink-400 text-white rounded-xl p-6 text-center hover:scale-105 transition-transform duration-300">
-              <img src="./src/assets/imgs/icon-news.png" alt="Ícone Notícias" className="mx-auto mb-4 h-16"/>
+              <img src="src/assets/icon-news.png" alt="Ícone Notícias" className="mx-auto mb-4 h-16"/>
               <h3 className="text-xl font-semibold mb-2">Notícias e Análises</h3>
               <p>Fique por dentro de tudo que acontece no mundo do futebol feminino com cobertura exclusiva.</p>
             </div>
 
             <div className="bg-gradient-to-b from-pink-400 to-pink-400 text-white rounded-xl p-6 text-center hover:scale-105 transition-transform duration-300">
-              <img src="./src/assets/imgs/icon-club.png" alt="Ícone Clube" className="mx-auto mb-4 h-16"/>
+              <img src="src/assets/icon-club.png" alt="Ícone Clube" className="mx-auto mb-4 h-16"/>
               <h3 className="text-xl font-semibold mb-2">Vitrine para Clubes</h3>
               <p>Clubes podem se cadastrar para descobrir e recrutar as próximas estrelas do futebol.</p>
             </div>
