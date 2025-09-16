@@ -14,21 +14,22 @@ let jogadoras = [];
 let nextId = 1;
 
 app.post('/jogadoras', (req, res) => {
-  const { nome, posicao, time } = req.body;
+  const { nome, posicao, time, qualidades, bio } = req.body;
 
   if (!nome || !posicao || !time) {
-    return res.status(400).json({ error: "Todos os campos são obrigatórios!" });
+    return res.status(400).json({ error: "Todos os campos obrigatórios!" });
   }
 
   const newPlayer = {
     id: nextId++,
     nome,
     posicao,
-    time
+    time,
+    qualidades: qualidades || "",
+    bio: bio || ""
   };
 
   jogadoras.push(newPlayer);
-
   res.status(201).json({ message: "Jogadora cadastrada com sucesso!", player: newPlayer });
 });
 
