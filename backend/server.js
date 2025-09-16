@@ -6,11 +6,6 @@ const PORT = 3001;
 app.use(express.json());
 app.use(cors());
 
-app.post('/arenaDelas', (req, res) => {
-  res.json({ message: "Backend rodando!" });
-});
-
-
 let jogadoras = [];
 let nextJogadoraId = 1;
 

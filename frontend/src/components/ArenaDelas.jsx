@@ -84,7 +84,7 @@ function ArenaDelas() {
         </div>
       </section>
 
-      <section className="bg-gray-100 py-10 text-center">
+      <section className="bg-white py-10 text-center">
         <p className="text-lg text-gray-900">{mensagem}</p>
       </section>
 
