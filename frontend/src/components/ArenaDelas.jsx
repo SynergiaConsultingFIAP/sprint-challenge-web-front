@@ -1,9 +1,19 @@
-const ArenaDelas = () => {
+import { useEffect, useState } from "react"
+
+function ArenaDelas() {
+  const [mensagem, setMensagem] = useState("");
+
+useEffect(() => {
+    fetch("http://localhost:3001/arenaDelas", { method: "POST" })
+      .then(res => res.json())
+      .then(data => setMensagem(data.message))
+      .catch((err) => console.error("Erro ao buscar backend:", err));
+  }, []);
+
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-400 p-4">
-      <div className="bg-white p-8 rounded-2x1 max-w-md text-center">
-        <h1 className="text-3x1 font-bold text-blue-600 mb-6">Arena Delas</h1>
-      </div>
+    <div className="p-4 text-center">
+      <h1 className="text-2xl font-bold">Arena Delas</h1>
+      <p className="mt-4 text-lg">{mensagem}</p>
     </div>
   )
 }
